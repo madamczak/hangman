@@ -11,4 +11,4 @@
 #return listOfWords at the end of readInWords method
 
 def hangman():
-    pass
+    abc=[]

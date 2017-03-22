@@ -9,3 +9,6 @@
 #check if length of strippedWord is greater than 5. If it is add it to listOfWords
 
 #return listOfWords at the end of readInWords method
+
+def hangman():
+    pass

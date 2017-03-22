@@ -10,6 +10,7 @@
 
 #return listOfWords at the end of readInWords method
 
-def hangman():
-    abc=[]
-    return abc
+def readInWords():
+    listOfWords = []
+
+    return listOfWords

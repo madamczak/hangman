@@ -12,3 +12,4 @@
 
 def hangman():
     abc=[]
+    return abc

@@ -10,8 +10,17 @@
 
 #return listOfWords at the end of readInWords method
 
-def readInWords(filePath):
-    pass
+def readInWords():
+    listOfWords = []
+    filewithwords=open(r"wordsEn.txt")
+    wordsdfromfile=filewithwords.readlines()
+    for word in wordsdfromfile:
+        strippedWord=word.strip()
+        if len(strippedWord)>5:
+            listOfWords.append(strippedWord)
+
+    return listOfWords
+
 
 #method that takes a letter and word as an argument and returns true if a word contains letter
 #method will only perform a check if a letter and word are not empty strings. It will return False if word and letter are empty strings

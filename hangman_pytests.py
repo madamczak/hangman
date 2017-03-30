@@ -3,7 +3,7 @@ import hangman
 
 def test_readInWords():
     wordsList = hangman.readInWords('wordsEn.txt')
-    assert len(wordsList) == 521
+    assert len(wordsList) == 283
 
 def test_letterInWord():
     assert hangman.letterInWord("AAA", 'A') == True

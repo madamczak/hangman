@@ -5,7 +5,7 @@ class TestStringMethods(unittest.TestCase):
 
     def test_readInWords(self):
         wordsList = hangman.readInWords('wordsEn.txt')
-        self.assertEqual(len(wordsList), 521)
+        self.assertEqual(len(wordsList), 283)
 
     def test_letterInWord(self):
         self.assertTrue(hangman.letterInWord("AAA", 'A'))

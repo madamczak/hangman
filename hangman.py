@@ -10,10 +10,10 @@
 
 #return listOfWords at the end of readInWords method
 
-def readInWords():
+def readInWords(filePath):
     listOfWords = []
 
-    fileWithWords = open(r"wordsEn.txt")
+    fileWithWords = open(filePath)
     wordsFromFile = fileWithWords.readlines()
 
     for word in wordsFromFile:

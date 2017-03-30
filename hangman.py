@@ -17,7 +17,7 @@ def readInWords():
     wordsFromFile = fileWithWords.readlines()
 
     for word in wordsFromFile:
-        strippedWord=word.strip()
+        strippedWord = word.strip()
 
         if len(strippedWord) > 5:
             listOfWords.append(strippedWord)

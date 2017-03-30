@@ -10,7 +10,16 @@
 
 #return listOfWords at the end of readInWords method
 
-def readInWords():
-    listOfWords = []
+def readInWords(filePath):
+    pass
 
-    return listOfWords
+#method that takes a letter and word as an argument and returns true if a word contains letter
+#method will only perform a check if a letter and word are not empty strings. It will return False if word and letter are empty strings
+def letterInWord(word, letter):
+    pass
+
+
+#method that takes a list of words as an argument and returns one, randomly chosen word
+def selectAWordToGuess(wordsList):
+    pass
+

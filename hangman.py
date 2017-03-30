@@ -12,11 +12,14 @@
 
 def readInWords():
     listOfWords = []
-    filewithwords=open(r"wordsEn.txt")
-    wordsdfromfile=filewithwords.readlines()
-    for word in wordsdfromfile:
-        strippedWord=word.strip()
-        if len(strippedWord)>5:
+
+    fileWithWords = open(r"wordsEn.txt")
+    wordsFromFile = fileWithWords.readlines()
+
+    for word in wordsFromFile:
+        strippedWord = word.strip()
+
+        if len(strippedWord) > 5:
             listOfWords.append(strippedWord)
 
     return listOfWords

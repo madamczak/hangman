@@ -9,6 +9,8 @@
 #check if length of strippedWord is greater than 5. If it is add it to listOfWords
 
 #return listOfWords at the end of readInWords method
+import random
+
 
 def readInWords(filePath):
     listOfWords = []
@@ -28,10 +30,11 @@ def readInWords(filePath):
 #method that takes a letter and word as an argument and returns true if a word contains letter
 #method will only perform a check if a letter and word are not empty strings. It will return False if word and letter are empty strings
 def letterInWord(word, letter):
-    pass
-
+    if word == "" or letter == "":
+        return False
+    else:
+        return letter in word
 
 #method that takes a list of words as an argument and returns one, randomly chosen word
 def selectAWordToGuess(wordsList):
-    pass
-
+    return random.choice(wordsList)

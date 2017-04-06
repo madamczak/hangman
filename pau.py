@@ -56,6 +56,9 @@
 #
 # print isSumEven(5, 6)
 
+if isSumEven(5,6) == False:
+    return True
+
 #==============================================================================================
 #DO DOMU
 #method readInWords that takes a file path(to the file with words) as an argument and returns a list of words longer than 5 letters.
@@ -69,5 +72,39 @@
 #check if length of strippedWord is greater than 5. If it is add it to listOfWords
 
 #return listOfWords at the end of readInWords method
+
+slownik = {"the": 500, "door": 100}
+oceny = {"religia": [6,6,6], "matematyka": [5,5]}
+
+oceny['polski'] = [3,3,3]
+print oceny['religia']
+print oceny.get('polsk', 1)
+
+print oceny.keys()
+print oceny.values()
+
+
+
+#print oceny
+
+def countLetters(word):
+    letterDict = {}
+
+    for letter in word:
+        if letter not in letterDict.keys():
+            letterDict[letter] = 1
+        else:
+            letterDict[letter] += 1
+
+    return letterDict
+
+print countLetters("tytan")
+
+
+
+
+
+
+
 
 
